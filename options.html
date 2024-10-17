@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productivity Tracker Settings</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      h1,
+      h2 {
+        color: #333;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      input[type="text"] {
+        width: 200px;
+        padding: 5px;
+        margin-right: 10px;
+      }
+      button {
+        padding: 5px 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+      .site-input {
+        display: flex;
+        margin-bottom: 10px;
+      }
+      #statusMessage {
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      #statusMessage.success {
+        background-color: #dff0d8;
+        color: #3c763d;
+      }
+      #statusMessage.error {
+        background-color: #f2dede;
+        color: #a94442;
+      }
+      #statusMessage.info {
+        background-color: #d9edf7;
+        color: #31708f;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Productivity Tracker Settings</h1>
+
+    <h2>Productive Sites</h2>
+    <div class="site-input">
+      <input
+        type="text"
+        id="newProductiveSite"
+        placeholder="Enter a productive site"
+      />
+      <button id="addProductiveSite">Add</button>
+    </div>
+    <ul id="productiveSites"></ul>
+
+    <h2>Unproductive Sites</h2>
+    <div class="site-input">
+      <input
+        type="text"
+        id="newUnproductiveSite"
+        placeholder="Enter an unproductive site"
+      />
+      <button id="addUnproductiveSite">Add</button>
+    </div>
+    <ul id="unproductiveSites"></ul>
+
+    <button id="saveSettings">Save Settings</button>
+
+    <div id="statusMessage"></div>
+
+    <script src="options.js"></script>
+  </body>
+</html>
