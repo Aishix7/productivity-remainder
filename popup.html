@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productivity Tracker</title>
+    <style>
+      body {
+        width: 300px;
+        padding: 16px;
+        font-family: Arial, sans-serif;
+        line-height: 1.5;
+      }
+      h1 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 16px;
+        color: #333;
+      }
+      #status {
+        margin-bottom: 16px;
+      }
+      .productive {
+        color: #10b981;
+        font-weight: bold;
+      }
+      .unproductive {
+        color: #dc2626;
+        font-weight: bold;
+      }
+      .error {
+        color: #dc2626;
+      }
+      button {
+        background-color: #3b82f6;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.3s ease;
+      }
+      button:hover {
+        background-color: #2563eb;
+      }
+      strong {
+        color: #4b5563;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Productivity Tracker</h1>
+    <div id="status"></div>
+    <button id="openSettings">Open Settings</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
